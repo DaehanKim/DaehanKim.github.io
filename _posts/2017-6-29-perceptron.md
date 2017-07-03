@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Perceptron(1)
+title: Perceptron
 ---
+
+* 이 포스트는 사이토 고키의 "Deep Learning from Scratch"의 내용을 바탕으로 한 것입니다.
 
 ### Perceptron
 
