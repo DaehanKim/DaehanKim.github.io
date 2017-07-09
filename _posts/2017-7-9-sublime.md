@@ -72,8 +72,7 @@ sudo mkdir /opt/sublime_text/lib
 sudo mv ./libsublime-imfix.so /opt/sublime_text/lib/
 ```
 
-> launch_sublime  
-
+*launch_sublime*  
 ```bash
 #!/bin/bash
 export LD_PRELOAD=/opt/sublime_text/lib/libsublime-imfix.so
