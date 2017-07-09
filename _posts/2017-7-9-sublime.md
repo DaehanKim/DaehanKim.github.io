@@ -9,6 +9,8 @@ Sublime Text는 Jon Skinner가 개발한 텍스트 에디터입니다. 가벼운
 
 ![sublime text](http://canorus.github.io/Resources/2016-08-10/showconsole.png)
 
+-------
+
 ### Font, Word-wrap setting
 
 먼저 sublime text를 설치한 디렉토리에 packages를 찾습니다. packages 안에 Default.sublime-package라는 .zip파일의 압축을 풀어줍니다. 저는 default라는 이름의 폴더를 만들어서 그 내부에 풀어줬습니다. 밖에 풀면 골치 아파요.  
@@ -44,6 +46,8 @@ zip Default.sublime-package ./*
 
  ![changed sublime](https://daehankim.github.io/images/new_sublime.png)
 
+-------
+
 ### 한글 입력 문제 
 
 Sublime Text 3는 아쉽게도 한글 입력을 지원하지 않습니다. 하지만 한 중국 개발자가 만든 스크립트 덕분에 완벽하지는 않지만 나름 쓸만하게 한글을 입력할 수 있습니다.
@@ -68,7 +72,8 @@ sudo mkdir /opt/sublime_text/lib
 sudo mv ./libsublime-imfix.so /opt/sublime_text/lib/
 ```
 
-> launch_sublime
+> launch_sublime  
+
 ```bash
 #!/bin/bash
 export LD_PRELOAD=/opt/sublime_text/lib/libsublime-imfix.so
@@ -81,23 +86,17 @@ exec /opt/sublime_text/sublime_text "$@"
 sudo mv ./launch_sublime /opt/sublime_text/
 ```
 
-이제 마지막으로 .bashrc를 수정해줘야 하는데요. 
-
-```bash
-sudo vi ~/.bashrc
-```
-
-로 파일을 연 후 다음 부분을 추가해주세요.
+이제 마지막으로 .bashrc를 수정해줘야 하는데요. 파일을 연 후 다음 부분을 추가해주세요.
 
 ```bash
 alias sub=/opt/sublime_text/launch_sublime
 ```
 
-그리고 바뀐 배쉬 설정파일을 적용하기 위해 
+그리고 바뀐 배쉬 설정파일을 적용하기 위해 다음을 실행해 줍니다.
 
 ```bash
 source ~/.bashrc
 ```
-를 실행해 줍니다. 그러면 이제 command line에서 sub 명령어로 sublime-text 3를 즐길 수 있습니다!
+그러면 이제 command line에서 sub 명령어로 sublime-text 3를 즐길 수 있습니다!
 
 ![sublime text 한글](https://daehankim.github.io/images/subhangul.png)
