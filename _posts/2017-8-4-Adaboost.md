@@ -35,5 +35,5 @@ This is pseudocode for Adaboost :
 
 
 Adaboost corresponds to surrogate loss function : 
-\\(C_{ada} = sum_i exp(-y^{i}f(x^{i}))\\)
+\\(C_{ada} = \sum_{i} exp(-y^{i}f(x^{i}))\\)
 
