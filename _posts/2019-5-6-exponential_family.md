@@ -16,7 +16,7 @@ First of all, this post introduces exponential family, which is widely used in s
 
 A distribution in EF has a form
 
- \( f_{X}(x;\theta) = h(x)exp(\eta(\theta)^T T(x) - A(\theta) ) \)
+ \\( f_{X}(x;\theta) = h(x)exp(\eta(\theta)^T T(x) - A(\theta) ) \\)
 
 And these properties hold : 
 
@@ -25,13 +25,13 @@ And these properties hold :
 - When \\( \vec{\theta} \in R^s \\),  \\(f_X\\) can be defined analogously and \\(f_X\\) is said to be *curved* if \\(dim(\vec{\theta}) < dim(\eta (\vec{\theta})) \\).
 - \\(T(x)\\) is a sufficient statistic of a sample x and for another sample \\(x'\\) such that \\(T(x) = T(x')\\), the following holds : 
 
- \( f(x; \theta_1) / f(x ; \theta_2) = f(y; \theta_1) / f(y; \theta_2) \)
+ \\( f(x; \theta_1) / f(x ; \theta_2) = f(y; \theta_1) / f(y; \theta_2) \\)
 
 - For an iid samples \\( X = \{x_1, x_2, ..., x_n \} \\), we have \\( T(X) = \sum_{i=1}^{n}{T(x_i)} \\)
 - \\( \eta \\) is called natural parameter.
 - \\( A(\eta) \\) is log-partition function and is determined when \\( T, h, \eta \\) are determined : 
 
- \( A(\eta) = log(\int_{x}{h(x)exp(\eat^T T(x)) dx}) \)
+ \\( A(\eta) = log(\int_{x}{h(x)exp(\eta^T T(x)) dx}) \\)
 
 ### Examples
 

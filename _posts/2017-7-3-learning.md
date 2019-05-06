@@ -21,7 +21,7 @@ Sigmoid 함수는 \\(1/(e^{-1}+1)\\) 와 같은 함수입니다. 0과 1 사이�
 
 ReLu 함수는 2012년 Imagenet challenge에서 우승한 모델인 Alex-net에서 처음 사용한 방식입니다. Sigmoid 활성함수를 사용한 레이어를 여러 층 쌓게 되면 절댓값이 1보다 작은 gradient가 계속 곱해져 사라지는 gradient-vanishing 문제가 발생하게 되는데요.  ReLu를 사용하면 gradient를 줄이지 않고 전달해 그 문제를 다소 완화시킬 수 있습니다. 수식은 아주 간단합니다.  
 
-  \(ReLu(x)=max(0,x)\)
+  \\ ReLu(x)=max(0,x) \\
 
 ![ReLu](https://i.stack.imgur.com/8CGlM.png)
 
